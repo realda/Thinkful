@@ -1,3 +1,5 @@
-function Print(){
-    console.log("HelloWorld!");
+'use strict'
+
+function printHelloWorld(){
+    return "HelloWorld!";
 }
