@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="TrafficLights.css">
+    <link rel="stylesheet" type="text/css" href="ErrorAlert.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
     <script type="text/javascript" src="HelloWorld.js"></script>
     <script type="text/javascript" src="StringDrills.js"></script>
     <script type="text/javascript" src="NumberDrills.js"></script>
+    <script type="text/javascript" src="TrafficLights.js"></script>
+    <script type="text/javascript" src="ErrorAlert.js"></script>
 
 </head>
 <body>
@@ -43,11 +50,35 @@
 
 <p>Is Divisable: <br>
     Is 18 divisible by 3?
-    <script type="text/javascript">document.write(isDivisible(18, 3))</script><br>
+    <script type="text/javascript">document.write(isDivisible(18, 3))</script>
+    <br>
 
     Is 15 divisible by 4?
     <script type="text/javascript">document.write(isDivisible(15, 4))</script>
 </p>
+
+
+<h3>Traffic Light:</h3>
+<div class="traffic-light-box">
+    <div class="traffic-light red-light"></div>
+    <div class="traffic-light yellow-light"></div>
+    <div class="traffic-light green-light"></div>
+</div>
+<div class="controls">
+    <button class="js-control-lights" onclick="doTrafficLights()">click me</button>
+</div>
+
+
+<main>
+    <h1>Handling Errors</h1>
+    <p class="error-report js-error-report">
+        <script type="text/javascript">
+            main();
+        </script>
+    </p>
+
+</main>
+
 
 </body>
 </html>
