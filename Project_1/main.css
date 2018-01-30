@@ -1,5 +1,12 @@
-P {
-  color: red;
+p::first-letter {
+    text-transform: uppercase;
+    color: red;
+    font-size: 30px;
+}
+
+P:hover
+{
+    color: red;
 }
 
 a {
@@ -8,4 +15,18 @@ a {
 
 .CountryList {
     color: deepskyblue;
+    width: 300px;
+}
+
+div.CountryList {
+    background-color: aquamarine;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid green;
+    margin: 30px;
+}
+
+#header {
+    color: darkorange;
 }
