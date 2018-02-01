@@ -1,0 +1,46 @@
+HTML
+
+
+Forms and Inputs
+1)  The <form> element wraps all our inputs and labels.
+e.g.    <form class='demo-form' action="/some-server-endpoint" method='post'>
+
+        </form>
+
+2)  <fieldset>: The fieldset element is used to group together related inputs and labels. The main reason to use fieldsets is that they help web crawlers and screen readers understand how inputs are grouped together.
+    <legend>: The legend element is like a title for the fieldset.
+
+3)  Inputs and Labels
+Labels tell human users, web crawlers, and screen readers what an input is for -- using the for attribute. While the label element requires opening and closing tags, inputs do not.
+
+e.g.    <label for="first-name">First name</label>
+        <input id="first-name" name="first-name" type="text">
+        or
+        <label for="first-name">First name <input id="first-name" type="text"></label>
+
+P.S. Note that although you're generally discouraged from using IDs as CSS selectors, using them to link inputs and labels is best practice. Always be sure to use the for attribute on your labels.
+
+
+Input attributes:
+'placeholder' is used to set text that initially displays before the user has input any data. Typically placeholders are used for example entries, and usually they're styled to be lighter than user input text.
+
+'required' is used to indicate that an input must be filled out. When the user submits the form, if there are any required child inputs on the form, the browser will display a message telling the user where they need to supply data.
+
+'pattern' attribute is used to supply regular expression patterns that the user's input must match with in order to be valid. In the example above, we use this to require that the phone number entry consists of only numbers, and optionally dashes.
+
+Finally, we find the 'type' attribute. This attribute determines how the element looks and how its validation works. For instance, an input with type='email' will be valid if the user inputs text that has an @ with text before and after. Have a close look at the type="radio" input from the demo form. In order to get the "pick one and only one" behavior out of the radio inputs in the form, we've used the same 'name' element on each input.
+
+
+4) <select> and <option>
+e.g.    <label class="question" for="feelings">How do you feel about it?</label>
+        <select name="feelings" id='feelings' required>
+            <option value="0">Great </option>
+            <option value="1" selected>Pretty great</option>
+            <option value="2">Definitely great</option>
+        </select>
+
+
+5) <Buttons>
+Our form uses <button> elements to allow users to submit and reset the form. This is done by setting the type attribute.
+
+Buttons have many uses beyond forms once you start working with JavaScript, but when you're only working with HTML and CSS, their use is usually limited to simple form controls.

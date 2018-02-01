@@ -1,0 +1,55 @@
+body{
+    background-color: dodgerblue;
+}
+
+.logo-image{
+    display: block;
+    margin: 35px auto;
+    height: 35px;
+}
+
+.sign-up-form{
+    display: block;
+    width: 320px;
+    height: 410px;
+    background-color: white;
+    padding: 20px 40px;
+    margin: auto;
+}
+
+.sign-up-title{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.label{
+    text-align: center;
+}
+
+.input{
+    display: block;
+    margin: 15px auto;
+    height: 20px;
+    width: 285px;
+    padding: 15px 15px;
+}
+
+.submit-button{
+    display: block;
+    background-color: mediumseagreen;
+    margin: 20px auto;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 55px;
+    width: 320px;
+}
+
+.login-notice{
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
